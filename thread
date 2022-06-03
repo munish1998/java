@@ -1,0 +1,25 @@
+package abc;
+
+public class a extends Thread {					// Thread program
+	public void run() {
+		for(int i=0;i<5;i++) {
+			System.out.println(Thread.currentThread().getName());
+		}
+	}
+
+	public static void main(String[] args) {
+		Thread t=new Thread();
+		Thread t1=new Thread();
+		a s=new a();
+		s.start();
+		t.start();
+		t1.start();
+		s.setName("kiet");
+		for(int i=0;i<5;i++) {
+			System.out.println(Thread.currentThread().getName());
+		}
+	
+
+	}
+
+}
