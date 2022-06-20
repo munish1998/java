@@ -1,0 +1,22 @@
+package javaa;
+
+public class threaaad extends Thread{
+	public void run()
+	{
+		System.out.println("run");
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		threaaad obj= new threaaad();
+		threaaad c=new threaaad();
+		obj.setPriority(2);
+		c.setPriority(3);
+		obj.start();
+		c.start();
+		obj.run();
+
+	}
+
+}
